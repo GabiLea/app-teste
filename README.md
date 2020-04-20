@@ -3,7 +3,9 @@ Iniciando o projeto
 Tenha instalado em sua maquina:
  - Node v6.12.1
  - Angular/cli v8.3
+ 
 Abra o projeto no Visual studio Code e abra um terminal e instale os pacotes do node
+
  npm install
  
 Agora abra dois terminais.
