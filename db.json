@@ -2,15 +2,15 @@
   "transactions": [
     {
       "id": 1,
-      "valor": "123",
+      "valor": "300",
       "tipoOperacao": "Débito",
-      "descricao": "sASas"
+      "descricao": "pagamento"
     },
     {
       "id": 2,
-      "valor": "234234",
+      "valor": "234",
       "tipoOperacao": "Crédito",
-      "descricao": "weqwq"
+      "descricao": "divida"
     }
   ]
 }
