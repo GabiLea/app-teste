@@ -1,0 +1,95 @@
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+}
+
+.menu-list__name--none {
+    display: none;
+}
+
+.menu-list>li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1E1E1E;
+    cursor: pointer;
+    height: 3.9375rem;
+    padding: 1.25rem 1.25rem 0 1.25rem;
+}
+
+.menu-list>li:hover {
+    background-color: #121212;
+}
+
+.menu-list__icon {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.menu-list__name {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    width: 10.25rem;
+    padding-left: 1rem;
+}
+
+.menu-list>li.menu-list--active {
+    border-left: 8px solid #363636;
+    background-color: #15151A;
+    padding: 1.25rem 1.75rem 1.25rem .75rem;
+}
+
+.icon {
+    color: white;
+    padding-right: 1rem;
+    font-size: 1.5rem
+}
+
+
+/*#region medias*/
+
+
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1024px) {
+    .menu-master {
+        display: inline-block;
+    }
+    .menu-list {
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        top: 5.75rem;
+        min-width: 4.25rem;
+        max-width: 13.75rem;
+        width: fit-content;
+        height: 100%;
+    }
+    .menu-list>li {
+        border-top: 1px solid #363636;
+        border-bottom: 1px solid #363636;
+        padding: 1.25rem;
+    }
+}
+
+
+/* 
+  ##Device = Mobile landscape
+ */
+
+@media (min-width: 666px) and (max-width: 812px) and (orientation: landscape) {}
+
+
+/*#endregion medias*/

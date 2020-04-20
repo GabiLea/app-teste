@@ -1,0 +1,192 @@
+.header-wrap {
+    display: grid;
+    position: fixed;
+    top: 0;
+    grid-template-columns: 2fr 7fr 1fr;
+    padding: 1rem 1.5rem;
+    background-color: var(--black);
+    align-items: center;
+    border-bottom: 1px solid var(--dark);
+    -webkit-transition: transform 300ms ease;
+    -moz-transition: transform 300ms ease;
+    -o-transition: transform 300ms ease;
+    transition: transform 300ms ease;
+    height: 5.625rem;
+    width: 100vw;
+    z-index: 29;
+}
+
+.header-wrap__img-circle-header {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.header-wrap__logo>img {
+    width: 5rem;
+    height: 1.8rem;
+}
+
+.header-wrap__name-system {
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1, 125rem;
+    text-align: right;
+}
+
+.header-wrap__img-client {
+    text-align: right;
+    border-left: 1px solid rgba(230, 230, 231, 0.3);
+    padding-left: 1.5rem;
+    margin-left: 1rem;
+}
+
+.header-wrap__name-client {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-align: left;
+}
+
+
+/*#region medias*/
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+  */
+
+@media (min-width: 1024px) {
+    .header-wrap__img-circle-header {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .header-wrap {
+        height: 100%;
+        padding: 1rem 3.5rem;
+        position: relative;
+        grid-template-columns: 1fr 8fr 2.3fr;
+    }
+    .header-wrap__img-client {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-wrap__logo>img {
+        width: 7rem;
+        height: 2rem;
+    }
+    .header-wrap__name-system {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    .header-wrap__img-client {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-wrap {
+        grid-template-columns: 1fr 6fr 3fr;
+    }
+    .header-wrap__name-system {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape) (IphoneX landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+    .header-wrap {
+        grid-template-columns: 1fr 8fr 4.5fr;
+    }
+    .header-wrap__img-client {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-wrap__name-system {
+        font-size: 1rem;
+    }
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets e mobile (Portrait)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
+    .header-wrap__name-client {
+        display: none;
+    }
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+    .header-wrap {
+        grid-template-columns: 1fr 8fr 5fr;
+    }
+    .header-wrap__img-client {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-wrap__name-system {
+        font-size: 1rem;
+    }
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Landscape)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+    .header-wrap {
+        grid-template-columns: 1fr 8fr 4.5fr;
+    }
+    .header-wrap__img-client {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-wrap__name-system {
+        font-size: 1rem;
+    }
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+    .header-wrap__name-client {
+        display: none;
+    }
+}
+
+
+/*#endregion medias*/

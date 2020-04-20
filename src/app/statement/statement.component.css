@@ -1,0 +1,7 @@
+.credito {
+    color: var(--danger);
+}
+
+.debito {
+    color: var(--success);
+}

@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Acções</th>
+            <th scope="col">Tipo de operação</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">valor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of state$ | async">
+            <th scope="row">
+                <button class="btn btn-primary" (click)="onEdit(item.id)">edit</button>&nbsp;
+                <button class="btn btn-primary" (click)="onDelete(item)">delete</button>
+            </th>
+            <td>{{item.tipoOperacao}}</td>
+            <td>{{item.descricao}}</td>
+            <td [ngClass]="{'credito': item.tipoOperacao == 'Crédito', 'debito': item.tipoOperacao == 'Débito'}">
+                <span *ngIf="item.tipoOperacao == 'Crédito'">-</span> R$ {{item.valor}}
+            </td>
+        </tr>
+
+    </tbody>
+</table>

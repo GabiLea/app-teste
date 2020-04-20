@@ -1,0 +1,12 @@
+<form [formGroup]="form">
+    <input type="text" placeholder="valor" formControlName="valor" />
+
+    <select formControlName="tipoOperacao"> 
+        <option value="Débito">Débito</option>
+        <option value="Crédito">Crédito</option>
+    </select>
+
+    <input type="text" placeholder="descricao" formControlName="descricao" />
+
+    <button type="submit" (click)="onSubmit()">Salvar</button>
+</form>

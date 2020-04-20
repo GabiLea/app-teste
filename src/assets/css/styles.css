@@ -1,0 +1,102 @@
+/* Folha de estilo global */
+
+
+/*Colors*/
+
+:root {
+    --primary: #101949;
+    --secondary: #D2AB3C;
+    --success: #008859;
+    --error: #531e6d;
+    --danger: #b71c1c;
+    --warning: #f1ae2f;
+    --light: #faf8f7;
+    --dark: #393939;
+    --black: #1E1E1E;
+    --disable: #d9d3cf;
+    --text-primary: #FFFFFF;
+    --text-secondary: #392D11;
+    --bg-disable: #d9d3cf;
+    --text-bg-disable: #969290;
+    --hover-primary: #303C74;
+    --hover-secondary: #d7af3e85;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-color: var(--light);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: 0 none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    border-top: 1px solid #363636;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.screen-only {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    position: fixed;
+    right: -1200px;
+}
+
+a {
+    color: var(--text-primary);
+}
+
+.btn.btn-primary {
+    background-color: var(--primary);
+    border: none;
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--hover-primary);
+}
+
+
+/*#region medias*/
+
+
+/* 
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1024px) {}

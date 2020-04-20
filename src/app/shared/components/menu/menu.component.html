@@ -1,0 +1,20 @@
+<nav class="menu-master">
+    <ul class="menu-list" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()">
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="" role="link" aria-label="acessar a página inicial">
+            <fa-icon class="icon" [icon]="['fas', 'home']"></fa-icon>
+            <a tabindex="0" class="menu-list__name" [class.menu-list__name--none]="hide">Home</a>
+        </li>
+
+        <li routerLinkActive="active" [routerLink]="['statement']" role="link" aria-label="ir para extratos">
+            <fa-icon class="icon" [icon]="['fas', 'digital-tachograph']"></fa-icon>
+
+            <a tabindex="0" class="menu-list__name" [class.menu-list__name--none]="hide">Extrato</a>
+        </li>
+
+        <li routerLinkActive="active" [routerLink]="['newTransaction']" role="link" aria-label="acessar transações">
+            <fa-icon class="icon" [icon]="['fas', 'piggy-bank']"></fa-icon>
+
+            <a tabindex="0" class="menu-list__name" [class.menu-list__name--none]="hide" (click)="onTransactions">nova transação</a>
+        </li>
+    </ul>
+</nav>

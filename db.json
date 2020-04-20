@@ -1,0 +1,16 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "valor": "123",
+      "tipoOperacao": "Débito",
+      "descricao": "sASas"
+    },
+    {
+      "id": 2,
+      "valor": "234234",
+      "tipoOperacao": "Crédito",
+      "descricao": "weqwq"
+    }
+  ]
+}
